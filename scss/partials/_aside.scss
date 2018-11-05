@@ -1,0 +1,7 @@
+aside {
+  display : none;
+  @media (min-width: 512px){
+    width: 10vw;
+    background: yellow;
+  }
+}
