@@ -1,42 +1,73 @@
 header {
   position: fixed;
-  height: calc(10vh + 3rem);
-  order: 1;
+  z-index: 1;
   background: lightgrey;
-  width: 100vw;
+  width: 100%;
+  height: 9vh;
+  //border: 1px solid maroon;
+}
+
+.nav_logo {
+  display: inline-block;
+  width: 20%;
+  max-width: 80px;
+  //height: 50px;
+  background-color: pink;
+}
+
+.nav_hamburger {
+  display: inline-block;
+  @include tabletAndDesktop {
+    display: none;
+  }
 }
 
 .nav_list1{
-  list-style: none;
-  height: 100%;
-  li {
+  display: none;
+  border: 1px solid violet;
+  @include tablet {
     display: inline-block;
-    //padding: 0.5em;
-    float: right;
-    &.nav_hamburger{
-      display: none;
+    width: 80%;
+    &:after {
+      content: '';
+      display: inline-block;
+      clear: both;
     }
-    &.nav_logo {
-      float: left;
-    }
-    &:not(:first-child){
+    .nav_list2_container {
+      list-style: none;
+      display: inline-block;
+      float: right;
       margin-left: 2em;
-      margin-right: 2em;
+      &:not(:first-child){
+        margin-right: 2em;
+      }
+    }
+
+  }
+  @include desktop {
+    list-style: none;
+    display: inline-block;
+    width: 80%;
+    &:after {
+      content: '';
+      display: inline-block;
+      clear: both;
+    }
+
+    .nav_list2_container {
+      display: inline-block;
+      float: right;
+      margin-left: 2em;
+      &:not(:first-child){
+        margin-right: 2em;
+      }
     }
   }
-  &:after{
-    content: '';
-    display: inline-block;
-    clear: both;
-  }
-}
-
-header{
-  text-align: center;
 }
 
 .nav_list2{
   display: none;
+  text-align: center;
 }
 
 .nav_list2_container {
@@ -68,7 +99,7 @@ header{
   }
 }
 
-header a{
+.nav_link {
   color: black;
   text-decoration: none;
   display: inline-block;

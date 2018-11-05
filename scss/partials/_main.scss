@@ -1,2 +1,45 @@
+.projects{
+  .projects_categories {
+    //width: 76vw;
+    //margin: 5px auto;
 
+    .projects_item_container{
+      border: 3px solid darkgreen;
+      border-radius: 5px;
+      width: 100%;
+      @include tabletAndDesktop {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+
+      .projects_item{
+        border: 1px solid orange;
+        width: 100%;
+        text-align: center;
+        @include tabletAndDesktop {
+          width: 45%;
+          margin: 2.5%;
+        }
+        .projects_item_photo{
+          display: none;
+          @include tabletAndDesktop {
+            display: block;
+            background: red;
+          }
+        }
+        .projects_button {
+          display: block;
+
+        }
+      }
+
+    }
+    .projects_outer_header {
+      color: navy;
+    }
+  }
+
+}
 

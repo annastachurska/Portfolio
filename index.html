@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html lang="eng">
 <head>
-    <meta charset="UTF-8">
     <title>My webpage</title>
-    <link href="css/main.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <nav class="container">
+            <div class="nav_logo">Logo</div>
+            <div class="nav_hamburger">&#9776;</div>
             <ul class="nav_list1">
-                <li class="nav_logo">Logo</li>
-                <li class="nav_hamburger">&#9776;</li>
                 <li class="nav_list2_container">Games
                     <ul class="nav_list2">
-                        <li><a href="#">Memory for scientists</a></li>
-                        <li><a href="#tetris">Tetris</a></li>
-                        <li><a href="#">Game of life</a></li>
-                        <li><a href="#">Furry game</a></li>
+                        <li><a class="nav_link" href="#memory">Memory for scientists</a></li>
+                        <li><a class="nav_link" href="#tetris">Tetris</a></li>
+                        <li><a class="nav_link" href="#life">Game of life</a></li>
+                        <li><a class="nav_link" href="#furry">Furry game</a></li>
                     </ul>
                 </li>
                 <li class="nav_list2_container">Web pages/Animation
                     <ul class="nav_list2">
-                        <li><a href="#">Sit on chair</a></li>
-                        <li><a href="#">Animation</a></li>
+                        <li><a class="nav_link" href="#sit">Sit on chair</a></li>
+                        <li><a class="nav_link" href="#animation">Animation</a></li>
                     </ul>
                 </li>
-                <li>List of movies</li>
+                <li class="nav_list2_container"><a class="nav_link" href="#">List of movies</a></li>
             </ul>
         </nav>
     </header>
+
+
     <div class="main_container">
         <aside>
             This is an advertisement banner - walking Smurf
         </aside>
         <main class="container">
-            <section >
-                <h1>My projects</h1>
-                <section>
-                    <h2>My games</h2>
-                    <div>
-                        <article>
-                            <h3 id="tetris">Tetris</h3>
-                            <div class="game-container">
-                                <div>Game photo</div>
-                                <div>Game description
-                                    <p>Challenge yourself with modified version of Tetris game! Unique features of buttons allowing board rotation will check your adaptibility to new situations. Or maybe you will be disoriented after pressing buttons shitching action of left and right arrows?</p>
-                                    <button><a href="https://annastachurska.github.io/Tetris/">Click to play</a></button>
+            <section class="projects">
+                <h1 class="projects_header">My projects</h1>
+                <section class="projects_categories games">
+                    <h2 class="projects_outer_header">My games</h2>
+                    <div class="projects_item_container">
+                        <article class="projects_item" id="tetris">
+                            <h3 class="projects_inner_header" >Tetris</h3>
+                            <div class="projects_inner_item_container">
+                                <div class="projects_item_photo">Game photo</div>
+                                <div class="projects_item_text_container">
+                                    <p class="projects_item_description">Challenge yourself with modified version of Tetris game! Unique features of buttons allowing board rotation will check your adaptibility to new situations. Or maybe you will be disoriented after pressing buttons shitching action of left and right arrows?</p>
+                                    <p class="projects_item_description">Technology used: HTML, CSS, JS, ES6</p>
                                 </div>
-
+                                <button class="projects_button"><a href="https://annastachurska.github.io/Tetris/">Click to play</a></button>
                             </div>
                         </article>
-                        <article>Memory for scientists</article>
+                        <article class="projects_item" id="memory">
+                            <h3 class="projects_inner_header">Memory for scientists</h3>
+                            <div class="projects_inner_item_container">
+                                <div class="projects_item_photo">Game photo</div>
+                                <div class="projects_item_text_container">Game description
+                                    <p class="projects_item_description">Are you a scientists? Or maybe you are curious about science terminology game? Try it and check your knowledge or luck! Unique feature of this game: checking is not  of buttons allowing board rotation will check your adaptibility to new situations. Or maybe you will be disoriented after pressing buttons shitching action of left and right arrows?</p>
+                                    <p class="projects_item_description">Technology used: HTML, CSS, JS, ES6</p>
+                                </div>
+                                <button class="projects_button"><a href="https://annastachurska.github.io/Memory_for_scientists/">Click to play</a></button>
+                            </div>
+                        </article>
+                        <article class="projects_item" id="life">
+                            <h3 class="projects_inner_header">Game of life</h3>
+                            <div class="projects_inner_item_container">
+                                <div class="projects_item_photo">Game photo</div>
+                                <div class="projects_item_text_container">Game description
+                                    <p class="projects_item_description">Observe the fascinating simulation of life of cells. Is it to crowded for them to live? Or maybe they are too lonely and incapable of surviving on their own. Play the game and check how the cell living status evolves! Unique feature of this game: checking is not  of buttons allowing board rotation will check your adaptibility to new situations. Or maybe you will be disoriented after pressing buttons shitching action of left and right arrows?</p>
+                                    <p class="projects_item_description">Technology used: HTML, CSS, JS, ES6</p>
+                                </div>
+                                <button class="projects_button"><a href="https://annastachurska.github.io/Game_of_life/">Click to play</a></button>
+                                <button class="projects_button"><a href="https://annastachurska.github.io/React_Game_of_Life/">Click to play (react version)</a></button>
+                            </div>
+                        </article>
+                        <article class="projects_item" id="furry">
+                            <h3 class="projects_inner_header">Furry game</h3>
+                            <div class="projects_inner_item_container">
+                                <div class="projects_item_photo">Game photo</div>
+                                <div class="projects_item_text_container">Game description
+                                    <p class="projects_item_description">Challenge yourself with modified version of Tetris game! Unique features of buttons allowing board rotation will check your adaptibility to new situations. Or maybe you will be disoriented after pressing buttons shitching action of left and right arrows?</p>
+                                    <p class="projects_item_description">Technology used: HTML, CSS, JS, ES6</p>
+                                </div>
+                                <button class="projects_button"><a href="https://annastachurska.github.io/Furry_Game/">Click to play</a></button>
+                            </div>
+                        </article>
                     </div>
                 </section>
                 <section>
@@ -98,8 +134,6 @@
                     </form>
                 </section>
             </section>
-
-
         </main>
         <aside>
             This is another advertisement - jumping frog
