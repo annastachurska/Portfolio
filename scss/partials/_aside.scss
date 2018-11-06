@@ -5,5 +5,14 @@ aside {
     width: 10%;
     background: yellow;
     border: 1px solid orangered;
+    .aside_container_smurf{
+      width: 128px;
+      height: 128px;
+      transform: translateY(30vh);
+      background-image: url("../img/img.png");
+      /*background-position: 0 0;*/
+      background-position-x: 0px;
+      background-position-y: 0px;
+    }
   }
 }

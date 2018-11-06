@@ -3,6 +3,12 @@ body {
   color: map-get($colors, font);
   font-family: 'Book Antiqua', 'Arial', sans-serif;
   position: relative;
+  @include tablet {
+    background-color: map-get($colors, backgroundTablet);
+  }
+  @include desktop {
+    background-color: map-get($colors, backgroundDesktop);
+  }
   @include printState {
     * {
       background-color: white;
