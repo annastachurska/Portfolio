@@ -1,0 +1,16 @@
+footer {
+  height: 7vh;
+  min-height: 50px;
+  width: 100%;
+  border: 3px solid black;
+  background-color: map-get($colors, header);
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      border: 1px solid purple;
+      }
+  }
+}

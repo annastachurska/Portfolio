@@ -9,3 +9,4 @@ Personal webpage with links to author's projects on Github grouped as games and 
 
 **Status:** in progress
 
+Smurf sprites downoladed from https://pl.pinterest.com/moradghioo/

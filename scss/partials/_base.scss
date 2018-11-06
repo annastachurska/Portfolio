@@ -2,7 +2,7 @@ body {
   background-color: map-get($colors, background);
   color: map-get($colors, font);
   font-family: 'Book Antiqua', 'Arial', sans-serif;
-  position: relative;
+  //position: relative;
   @include tablet {
     background-color: map-get($colors, backgroundTablet);
   }
@@ -36,9 +36,6 @@ body {
 .main_container{
   width: 100%;
   display: flex;
-  position: absolute;
-  top: 9vh;
-  left: 0;
 }
 
 
