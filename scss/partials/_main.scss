@@ -26,8 +26,32 @@
           display: none;
           @include tabletAndDesktop {
             display: block;
-            background: red;
+            background-color: red;
+            width: 80%;
+            height: 28vh;
+            //height: 548*100%/1302;
+            background-size: contain;
+            margin: 1em 10%;
+              @for $i from 1 through 4 {
+                &.photo-#{$i} {
+                  @if $i == 1 {
+                  background-image: url("../img/tetris1.png");
+                  } @else if $i == 2 {
+                    background-image: url("../img/memory1.png");
+                  } @else if $i == 3 {
+                    background-image: url("../img/life1.png");
+                  } @else if $i ==4 {
+                    background-image: url("../img/furry1.png");
+                  }
+
+              }
+            }
+
           }
+        }
+
+        .projects_item_description{
+          padding: 10px;
         }
         .projects_button {
           display: block;
