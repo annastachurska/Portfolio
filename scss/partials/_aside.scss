@@ -4,20 +4,23 @@ aside {
     display: inline-block;
     width: 10%;
     background: map-get($colors, aside_background);
-    border: 1px solid orangered;
-    //height: 100%;
     .aside_smurf{
       width: 128px;
       height: 128px;
       transform: translateY(30vh);
+      background-color: transparent;
       background-image: url("../img/img.png");
-      background-position-x: 0px;
-      background-position-y: 0px;
+      -ms-background-position-x: 0;
+      background-position-x: 0;
+      -ms-background-position-y: 0;
+      background-position-y: 0;
       &.aside_rotated{
-        //transform: rotateZ(180deg);
-        transform: rotateZ(90deg);
+        -webkit-transform: rotateZ(90deg);
+        -moz-transform: rotateZ(90deg);
+        -ms-transform: rotateZ(90deg);
+        -o-transform: rotateZ(90deg);
+        transform: rotateZ(90deg) translateY(5px);
       }
     }
-
   }
 }
