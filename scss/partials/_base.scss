@@ -1,9 +1,6 @@
 body {
-
   color: map-get($colors, font);
   font-family: 'Book Antiqua', 'Arial', sans-serif;
-  //position: relative;
-
   @include printState {
     * {
       background-color: white;
@@ -26,7 +23,6 @@ main {
 
 .container{
   width: 100%;
-  border: 1px solid red;
   max-width: 1200px;
   @include tabletAndDesktop {
     width: 80%;

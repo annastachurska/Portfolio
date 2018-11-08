@@ -2,8 +2,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const img = document.getElementsByClassName('aside_smurf');
     const aside = document.getElementsByTagName('aside');
+    const navSign = document.querySelector('.nav_hamburger_sign');
+    const navList = document.querySelector('.nav_hamburger_list');
+
     img[1].style.webkitTransform = 'rotateZ(90deg) scale(' + (aside[1].clientWidth/132) + ') translateY(' + (130 - aside[1].clientWidth) + 'px)';
     img[1].style.transform = 'rotateZ(90deg) scale(' + (aside[1].clientWidth/132) + ') translateY(' + (130 - aside[1].clientWidth) + 'px)';
+    img[0].style.webkitTransform = 'translateY(30vh) scale(' + aside[0].clientWidth/128 + ') translateX(-' + (128 - aside[0].clientWidth) + 'px)';
+    img[0].style.transform = 'translateY(30vh) scale(' + aside[0].clientWidth/128 + ') translateX(-' + (128 - aside[0].clientWidth) + 'px)';
 
     for (let i=0; i<img.length; i++) {
         img[i].style.backgroundPositionX = '0px';
@@ -44,6 +49,10 @@ document.addEventListener('DOMContentLoaded', function(){
             aside[0].querySelector('div').style.webkitTransform = 'translateY(30vh) scale(1)';
             aside[0].querySelector('div').style.transform = 'translateY(30vh) scale(1)';
         }
+    });
+
+    navSign.addEventListener('click', () => {
+        navList.style.display = (navList.style.display == 'block') ? 'none': 'block';
     });
 
 });
