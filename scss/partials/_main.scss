@@ -1,124 +1,54 @@
-.projects{
-  .projects_categories {
-    .projects_item_container{
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
-      width: 100%;
-      @include tabletAndDesktop {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-flex-direction: row;
-        -moz-flex-direction: row;
-        flex-direction: row;
-        -webkit-justify-content: space-evenly;
-        -moz-justify-content: space-evenly;
-        justify-content: space-evenly;
-      }
-      @include desktop {
-        //background-color: #247646;
-      }
-      .projects_item{
-        transition: 0.3s;
-        //border: 5px solid steelblue;
-        //box-shadow: 0px 0px 7px maroon;
-        border: 5px solid #346666;
-        box-shadow: 0px 0px 8px darkblue;
-        border-radius: 5px;
-        width: 100%;
-        text-align: center;
-        background-image: url("../img/tetris1.png");
-        background-blend-mode: hue;
-        background-size: contain;
-        @include tabletAndDesktop {
-          width: 45%;
-          margin: 2.5% 0;
-          background-image: none;
-        }
-        @include desktop {
-          //border: 5px solid #347777;
-          border: 5px solid #247646;
-          box-shadow: 0px 0px 8px darkgreen;
-          background-color: #7acbab;
-        }
-        .projects_inner_header{
-          padding-top: 1em;
-          font-size: 1.6em;
-          @include tablet {
-            text-shadow: 0 0 3px darkviolet;
-          }
-          @include desktop {
-            //color: seagreen;
-            text-shadow: 0 0 3px darkgreen;
-            //color: darkolivegreen;
-            color: #014313;
-          }
-        }
-        .projects_item_photo{
-          display: none;
-          @include tabletAndDesktop {
-            display: block;
-            background-color: red;
-            border: 2px solid darkblue;
-            box-shadow: 0px 0px 4px maroon;
-            border-radius: 5px;
-            width: 80%;
-            height: 28vh;
-            //height: 548*100%/1302;
-            background-size: contain;
-            margin: 1em 10%;
-              @for $i from 1 through 4 {
-                &.photo-#{$i} {
-                  @if $i == 1 {
-                  background-image: url("../img/tetris1.png");
-                  } @else if $i == 2 {
-                    background-image: url("../img/memory1.png");
-                  } @else if $i == 3 {
-                    background-image: url("../img/life1.png");
-                  } @else if $i ==4 {
-                    background-image: url("../img/furry1.png");
-                  }
-                }
-              }
-            }
-        }
-        .projects_item_description{
-          padding: 10px;
-        }
-
-      }
-    }
-
+.projects_item_container {
+  border-radius: 5px;
+  width: 100%;
+  @include tabletAndDesktop {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-
 }
 
-.projects_button {
+
+
+.projects_item{
+  border: 5px solid #346666;
+  box-shadow: 0px 0px 8px darkblue;
+  border-radius: 5px;
+  width: 100%;
   text-align: center;
-  margin-bottom: 1em;
-  padding: 5px 10px;
-  background: #4eb2b2;
-  border: 2px solid #14222f;
-  font-weight: 800;
-  a {
-    text-decoration: none;
-    color: map-get($colors, font);
+  background-color: #14222f;
+  color: #c6e6e6;
+  @include tabletAndDesktop {
+    width: 45%;
+    margin: 2.5% 0;
+    color: black;
   }
   @include tablet {
-    background: #f2e6ff;
-    border: 2px solid #26004d;
-    font-weight: 700;
+    background-color: #bfbbff;
   }
   @include desktop {
-    background: palegreen;
-    border: 2px solid seagreen;
-    a {
-      color: #014313;
-      font-weight: 800;
+    background-color: #7acbab;
+    border: 5px solid #247646;
+    box-shadow: 0px 0px 8px darkgreen;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.02);
     }
+  }
+}
+
+
+.projects_inner_header{
+  padding-top: 1em;
+  font-size: 1.6em;
+  @include tablet {
+    text-shadow: 0 0 3px darkviolet;
+  }
+  @include desktop {
+    text-shadow: 0 0 3px darkgreen;
+    color: #014313;
   }
 }
 
@@ -135,3 +65,65 @@
   padding: 0.2em;
   font-style: italic;
 }
+
+.projects_item_description{
+  padding: 10px;
+}
+
+.projects_item_photo{
+  display: none;
+  @include tabletAndDesktop {
+    display: block;
+    background-color: lightgrey;
+    border: 2px solid darkblue;
+    box-shadow: 0px 0px 4px maroon;
+    border-radius: 5px;
+    width: 80%;
+    height: 28vh;
+    background-size: cover;
+    background-position: center;
+    margin: 1em 10%;
+    @for $i from 1 through 4 {
+      &.photo-#{$i} {
+        @if $i == 1 {
+          background-image: url("../img/tetris1.png");
+        } @else if $i == 2 {
+          background-image: url("../img/memory1.png");
+        } @else if $i == 3 {
+          background-image: url("../img/life1.png");
+        } @else if $i ==4 {
+          background-image: url("../img/furry1.png");
+        }
+      }
+    }
+  }
+}
+
+.projects_button {
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 5px 10px;
+  background-color: #c6e6e6;
+  border: 2px solid #0d160e;
+  a {
+    font-weight: 800;
+    text-decoration: none;
+    color: #14222f;
+  }
+  @include tablet {
+    background-color: #f2e6ff;
+    border: 2px solid #26004d;
+    a {
+      font-weight: 700;
+      color: map-get($colors, font);
+    }
+  }
+  @include desktop {
+    background-color: palegreen;
+    border: 2px solid seagreen;
+    a {
+      color: #014313;
+    }
+  }
+}
+
