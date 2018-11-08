@@ -3,7 +3,7 @@ aside {
   @include tabletAndDesktop {
     display: inline-block;
     width: 10%;
-    background: map-get($colors, aside_background);
+    background-color: map-get($colors, aside_background);
     .aside_smurf{
       width: 128px;
       height: 128px;
@@ -19,10 +19,10 @@ aside {
       -ms-background-position-y: 0;
       background-position-y: 0;
       &.aside_rotated{
-        -webkit-transform: rotateZ(90deg);
-        -moz-transform: rotateZ(90deg);
-        -ms-transform: rotateZ(90deg);
-        -o-transform: rotateZ(90deg);
+        -webkit-transform: rotateZ(90deg) translateY(5px);
+        -moz-transform: rotateZ(90deg) translateY(5px);
+        -ms-transform: rotateZ(90deg) translateY(5px);
+        -o-transform: rotateZ(90deg) translateY(5px);
         transform: rotateZ(90deg) translateY(5px);
       }
     }

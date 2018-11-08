@@ -1,5 +1,5 @@
 header {
-  background: map-get($colors, header);
+  background-color: map-get($colors, header);
   width: 100%;
   padding: 0.7em 0;
 }
@@ -52,7 +52,7 @@ header {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background: map-get($colors, header);
+    background-color: map-get($colors, header);
     &.games {
       left: -80%;
       width: 200px;
