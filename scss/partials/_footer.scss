@@ -1,16 +1,31 @@
 footer {
-  height: 7vh;
-  min-height: 50px;
   width: 100%;
-  border: 3px solid black;
-  background-color: map-get($colors, header);
+  background-color: map-get($colors, footer);
   .container {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
     flex-direction: row;
-    justify-content: space-between;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
     align-items: center;
-    span {
-      border: 1px solid purple;
-      }
+    padding: 0.5em 0;
+    @include tabletAndDesktop {
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+    }
+    .footer_description {
+      padding-right: 1em;
+      font-style: italic;
+      letter-spacing: 0.2em;
+      font-weight: 900;
+      @include tabletAndDesktop {
+        padding-right: 0;
+       }
+    }
   }
 }

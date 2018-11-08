@@ -7,6 +7,10 @@ aside {
     .aside_smurf{
       width: 128px;
       height: 128px;
+      -webkit-transform: translateY(30vh);
+      -moz-transform: translateY(30vh);
+      -ms-transform: translateY(30vh);
+      -o-transform: translateY(30vh);
       transform: translateY(30vh);
       background-color: transparent;
       background-image: url("../img/img.png");
