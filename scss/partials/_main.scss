@@ -88,21 +88,39 @@
         .projects_item_description{
           padding: 10px;
         }
-        .projects_button {
-          display: block;
-        }
+
       }
     }
-    .projects_outer_header {
-      font-size: 1.7em;
-      text-align: center;
-      padding: 0.2em;
-      font-style: italic;
-    }
+
   }
 
 }
 
+.projects_button {
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 5px 10px;
+  background: #4eb2b2;
+  border: 2px solid #14222f;
+  font-weight: 800;
+  a {
+    text-decoration: none;
+    color: map-get($colors, font);
+  }
+  @include tablet {
+    background: #f2e6ff;
+    border: 2px solid #26004d;
+    font-weight: 700;
+  }
+  @include desktop {
+    background: palegreen;
+    border: 2px solid seagreen;
+    a {
+      color: #014313;
+      font-weight: 800;
+    }
+  }
+}
 
 .projects_header {
   font-size: 2.7em;
@@ -111,3 +129,9 @@
   font-family: 'Courgette', cursive;
 }
 
+.projects_outer_header {
+  font-size: 1.7em;
+  text-align: center;
+  padding: 0.2em;
+  font-style: italic;
+}
