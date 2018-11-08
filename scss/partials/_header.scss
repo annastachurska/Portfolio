@@ -9,7 +9,7 @@ header {
   display: inline-block;
   width: 20%;
   max-width: 80px;
-  color: #330033;
+  color: map-get($colors, logo);
   font-size: 1.7em;
   padding-left: 20px;
   text-shadow: 0px 0px 2px #4d004d,0px 0px 4px #660066, 0 0 6px #800080, 0 0 8px #990099, 0 0 10px #b300b3, 0 0 12px #cc00cc;

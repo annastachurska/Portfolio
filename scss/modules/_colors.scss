@@ -1,10 +1,25 @@
 $colors: (
+  aside_background: #ffff80,
   background: #347777,
   backgroundDesktop: palegreen,
   backgroundTablet: #bfbbff,
+  font: black,
+  footer: lightgrey,
   header: lightgrey,
   headerBorder: grey,
-  footer: lightgrey,
-  font: black,
-  aside_background: #ffff80
-)
+  logo: #330033,
+  mainBorder: #346666,
+  mainBorderShadow: darkblue
+);
+
+$colorsTablet: (
+  background: #bfbbff,
+  buttonBorder: #26004d,
+  buttonBackground: #f2e6ff
+);
+
+$colorsDesktop: (
+  buttonBorder: seagreen,
+  buttonBackground: palegreen,
+  buttonFont: #014313
+);

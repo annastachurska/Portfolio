@@ -33,10 +33,10 @@
 }
 
 .projects_item{
-  border: 5px solid #346666;
-  -webkit-box-shadow: 0px 0px 8px darkblue;
-  -moz-box-shadow: 0px 0px 8px darkblue;
-  box-shadow: 0px 0px 8px darkblue;
+  border: 5px solid map-get($colors, mainBorder);
+  -webkit-box-shadow: 0px 0px 8px map-get($colors, mainBorderShadow);
+  -moz-box-shadow: 0px 0px 8px map-get($colors, mainBorderShadow);
+  box-shadow: 0px 0px 8px map-get($colors, mainBorderShadow);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   width: 100%;
@@ -96,7 +96,7 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    background-color: lightgrey;
+    background-color: transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -135,18 +135,18 @@
     color: #14222f;
   }
   @include tablet {
-    background-color: #f2e6ff;
-    border: 2px solid #26004d;
+    background-color: map-get($colorsTablet, buttonBackground);
+    border: 2px solid map-get($colorsTablet, buttonBorder);
     a {
       font-weight: 700;
       color: map-get($colors, font);
     }
   }
   @include desktop {
-    background-color: palegreen;
-    border: 2px solid seagreen;
+    background-color: map-get($colorsDesktop, buttonBackground);
+    border: 2px solid map-get($colorsDesktop, buttonBorder);
     a {
-      color: #014313;
+      color: map-get($colorsDesktop, buttonFont);
     }
   }
 }
