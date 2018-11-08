@@ -11,15 +11,6 @@ body {
     }
   }
 }
-main {
-  background-color: map-get($colors, background);
-  @include tablet {
-    background-color: map-get($colors, backgroundTablet);
-  }
-  @include desktop {
-    background-color: map-get($colors, backgroundDesktop);
-  }
-}
 
 .container{
   width: 100%;
@@ -30,15 +21,20 @@ main {
   }
 }
 
-
-
 .main_container{
   width: 100%;
   display: flex;
 }
 
-
-
-main.container {
-  margin: 0;
+main {
+  background-color: map-get($colors, background);
+  @include tablet {
+    background-color: map-get($colors, backgroundTablet);
+  }
+  @include desktop {
+    background-color: map-get($colors, backgroundDesktop);
+  }
+  &.container {
+    margin: 0;
+  }
 }
