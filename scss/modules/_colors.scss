@@ -1,25 +1,42 @@
 $colors: (
   aside_background: #ffff80,
-  background: #347777,
-  backgroundDesktop: palegreen,
-  backgroundTablet: #bfbbff,
   font: black,
   footer: lightgrey,
   header: lightgrey,
   headerBorder: grey,
   logo: #330033,
   mainBorder: #346666,
-  mainBorderShadow: darkblue
+  mainBorderShadow: darkblue,
+  photoBorder: darkblue,
+  photoShadow: maroon
+);
+
+$colorsSmall: (
+  background: #347777,
+  buttonBorder: #0d160e,
+  buttonBackground: #c6e6e6,
+  projectsItemColor: #c6e6e6,
+  projectsItemBackground: #14222f
 );
 
 $colorsTablet: (
   background: #bfbbff,
   buttonBorder: #26004d,
-  buttonBackground: #f2e6ff
+  buttonBackground: #f2e6ff,
+  innerHeaderTextShadow: darkviolet,
+  projectsItemBackground: #bfbbff
 );
 
 $colorsDesktop: (
+  background: palegreen,
   buttonBorder: seagreen,
   buttonBackground: palegreen,
-  buttonFont: #014313
+  buttonFont: #014313,
+  innerHeaderTextShadow: darkgreen,
+  innerHeaderText: #014313,
+  projectsItemBackground: #7acbab,
+  projectsItemBorder: #247646,
+  projectsItemBoxShadow: darkgreen
 );
+
+

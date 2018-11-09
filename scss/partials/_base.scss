@@ -28,12 +28,12 @@ body {
 }
 
 main {
-  background-color: map-get($colors, background);
+  background-color: map-get($colorsSmall, background);
   @include tablet {
-    background-color: map-get($colors, backgroundTablet);
+    background-color: map-get($colorsTablet, background);
   }
   @include desktop {
-    background-color: map-get($colors, backgroundDesktop);
+    background-color: map-get($colorsDesktop, background);
   }
   &.container {
     margin: 0;
