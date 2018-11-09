@@ -8,7 +8,7 @@ Personal webpage with links to author's projects on Github grouped as games and 
 **Description**
 A personal webpage with summary of author's Github projects. The page looks differently on mobile, tablet and desktop. Navigation in header in mobile is visible as hamburger menu.
 In tablet and desktop mode the photos from projcts are visible and upon clicking the image changes according to projects action. Links for each projects are created and they are available upon clicking on respective buttons.
-Moving smurfs are added in aside sections as an entertainment. 
+Moving smurfs are added in aside sections as an entertainment.
 
 **Status:** completed
 
