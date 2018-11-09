@@ -104,7 +104,7 @@
     background-size: cover;
     background-position: center;
     margin: 1em 10%;
-    @for $i from 1 through 4 {
+    @for $i from 1 through 6 {
       &.photo-#{$i} {
         @if $i == 1 {
           background-image: url("../img/tetris1.png");
@@ -112,8 +112,12 @@
           background-image: url("../img/memory1.png");
         } @else if $i == 3 {
           background-image: url("../img/life1.png");
-        } @else if $i ==4 {
+        } @else if $i == 4 {
           background-image: url("../img/furry1.png");
+        } @else if $i == 5 {
+          background-image: url("../img/sit1.png");
+        } @else if $i == 6 {
+          background-image: url("../img/animation1.png");
         }
       }
     }
