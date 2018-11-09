@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const aside = document.getElementsByTagName('aside');
     const navSign = document.querySelector('.nav_hamburger_sign');
     const navList = document.querySelector('.nav_hamburger_list');
+    const photos = document.getElementsByClassName('projects_item_photo');
 
     img[1].style.webkitTransform = 'rotateZ(90deg) scale(' + (aside[1].clientWidth/132) + ') translateY(' + (130 - aside[1].clientWidth) + 'px)';
     img[1].style.transform = 'rotateZ(90deg) scale(' + (aside[1].clientWidth/132) + ') translateY(' + (130 - aside[1].clientWidth) + 'px)';
@@ -54,5 +55,33 @@ document.addEventListener('DOMContentLoaded', function(){
     navSign.addEventListener('click', () => {
         navList.style.display = (navList.style.display == 'block') ? 'none': 'block';
     });
+
+    let tetris = 2, memory = 2, life = 2;
+
+    for (let i=0; i<photos.length; i++) {
+        photos[i].addEventListener('click', () => {
+            if (i == 0) {
+                photos[0].style.backgroundImage = 'url("./img/tetris'+tetris+'.png")';
+                tetris++;
+                if (tetris > 4) {
+                    tetris = 1;
+                }
+            }
+            if (i == 1) {
+                photos[1].style.backgroundImage = 'url("./img/memory'+memory+'.png")';
+                memory++;
+                if (memory > 3) {
+                    memory = 1;
+                }
+            }
+            if (i == 2) {
+                photos[2].style.backgroundImage = 'url("./img/life'+life+'.png")';
+                life++;
+                if (life > 3) {
+                    life = 1;
+                }
+            }
+        });
+    }
 
 });
