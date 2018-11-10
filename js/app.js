@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
         navList.style.display = (navList.style.display == 'block') ? 'none': 'block';
     });
 
-    let tetris = 2, memory = 2, life = 2, sit = 2, animation = 2;
+    let tetris = 2, memory = 2, life = 2, furry = 2, sit = 2, animation = 2;
 
     for (let i=0; i<photos.length; i++) {
         photos[i].addEventListener('click', () => {
@@ -79,6 +79,13 @@ document.addEventListener('DOMContentLoaded', function(){
                 life++;
                 if (life > 3) {
                     life = 1;
+                }
+            }
+            if (i == 3) {
+                photos[3].style.backgroundImage = 'url("./img/furry'+furry+'.png")';
+                furry++;
+                if (furry > 3) {
+                    furry = 1;
                 }
             }
             if (i == 4) {
