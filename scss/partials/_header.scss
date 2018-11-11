@@ -104,12 +104,10 @@ header {
   font-size: 2em;
   font-weight: 900;
   cursor: pointer;
-  display: inline-block;
   width: 40vw;
   &:before {
     content:'\2630';
     display: inline-block;
-
   }
 }
 
