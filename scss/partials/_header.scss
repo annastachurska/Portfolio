@@ -95,7 +95,6 @@ header {
 .nav_hamburger {
   position: relative;
   display: inline-block;
-  width: 80%;
   @include tabletAndDesktop {
     display: none;
   }
@@ -107,7 +106,11 @@ header {
   cursor: pointer;
   display: inline-block;
   width: 40vw;
-  border: 3px solid green;
+  &:before {
+    content:'\2630';
+    display: inline-block;
+
+  }
 }
 
 .nav_hamburger_list {
