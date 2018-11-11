@@ -95,6 +95,7 @@ header {
 .nav_hamburger {
   position: relative;
   display: inline-block;
+  width: 80%;
   @include tabletAndDesktop {
     display: none;
   }
@@ -104,8 +105,9 @@ header {
   font-size: 2em;
   font-weight: 900;
   cursor: pointer;
+  display: inline-block;
   width: 40vw;
-  border: 3px solid red;
+  border: 3px solid green;
 }
 
 .nav_hamburger_list {
