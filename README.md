@@ -1,7 +1,7 @@
 # Personal webpage
 Personal webpage with links to author's projects on Github grouped as games and Websites/animations.
 
-**Technology:** HTML5, JS, SASS, gulp, npm, RWD, mobile first
+**Technology:** HTML5, JS, SASS, Gulp, npm, RWD, mobile first
 
 **Installation:** gulpfile.js and package.json are available in folder. Use npm install command and then gulp sass to create css file. For cloning use git clone command.
 

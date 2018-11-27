@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    const img = document.getElementsByClassName('aside_smurf');
-    const aside = document.getElementsByTagName('aside');
-    const navSign = document.querySelector('.nav_hamburger_sign');
-    const navList = document.querySelector('.nav_hamburger_list');
-    const photos = document.getElementsByClassName('projects_item_photo');
+    var img = document.getElementsByClassName('aside_smurf');
+    var aside = document.getElementsByTagName('aside');
+    var navSign = document.querySelector('.nav_hamburger_sign');
+    var navList = document.querySelector('.nav_hamburger_list');
+    var photos = document.getElementsByClassName('projects_item_photo');
 
     img[1].style.webkitTransform = 'rotateZ(90deg) scale(' + (aside[1].clientWidth/132) + ') translateY(' + (130 - aside[1].clientWidth) + 'px)';
     img[1].style.transform = 'rotateZ(90deg) scale(' + (aside[1].clientWidth/132) + ') translateY(' + (130 - aside[1].clientWidth) + 'px)';
     img[0].style.webkitTransform = 'translateY(30vh) scale(' + aside[0].clientWidth/128 + ') translateX(-' + (128 - aside[0].clientWidth) + 'px)';
     img[0].style.transform = 'translateY(30vh) scale(' + aside[0].clientWidth/128 + ') translateX(-' + (128 - aside[0].clientWidth) + 'px)';
 
-    for (let i=0; i<img.length; i++) {
+    for (var i=0; i<img.length; i++) {
         img[i].style.backgroundPositionX = '0px';
         img[i].style.backgroundPositionY = '0px';
-        let size = 1;
+        var size = 1;
         setInterval(() => {
-            let x = parseInt(img[i].style.backgroundPositionX);
-            let y = parseInt(img[i].style.backgroundPositionY);
+            var x = parseInt(img[i].style.backgroundPositionX);
+            var y = parseInt(img[i].style.backgroundPositionY);
 
             if (x + 128 + 128 > 512) {
                 img[i].style.backgroundPositionX ='0px';
@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', function(){
         navList.style.display = (navList.style.display == 'block') ? 'none': 'block';
     });
 
-    let tetris = 2, memory = 2, life = 2, furry = 2, sit = 2, animation = 2;
+    var tetris = 2, memory = 2, life = 2, furry = 2, sit = 2, animation = 2;
 
-    for (let i=0; i<photos.length; i++) {
+    for (var i=0; i<photos.length; i++) {
         photos[i].addEventListener('click', () => {
             if (i == 0) {
                 photos[0].style.backgroundImage = 'url("./img/tetris'+tetris+'.png")';
