@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', function(){
     img[0].style.webkitTransform = 'translateY(30vh) scale(' + aside[0].clientWidth/128 + ') translateX(-' + (128 - aside[0].clientWidth) + 'px)';
     img[0].style.transform = 'translateY(30vh) scale(' + aside[0].clientWidth/128 + ') translateX(-' + (128 - aside[0].clientWidth) + 'px)';
 
-    for (var i=0; i<img.length; i++) {
+    for (let i=0; i<img.length; i++) {
         img[i].style.backgroundPositionX = '0px';
         img[i].style.backgroundPositionY = '0px';
         var size = 1;
+
         setInterval(() => {
             var x = parseInt(img[i].style.backgroundPositionX);
             var y = parseInt(img[i].style.backgroundPositionY);
