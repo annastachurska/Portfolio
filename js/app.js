@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var tetris = 2, memory = 2, life = 2, furry = 2, sit = 2, animation = 2;
 
-    for (var i=0; i<photos.length; i++) {
+    for (let i=0; i<photos.length; i++) {
         photos[i].addEventListener('click', () => {
             if (i == 0) {
                 photos[0].style.backgroundImage = 'url("./img/tetris'+tetris+'.png")';
